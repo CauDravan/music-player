@@ -1,0 +1,126 @@
+/* ==== Reset & Font ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ==== Container ==== */
+.quiz-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  width: 450px;
+  max-width: 90%;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+/* ==== Header ==== */
+.quiz-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: #00e0ff;
+  letter-spacing: 1px;
+}
+
+/* ==== Question ==== */
+#question {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* ==== Options ==== */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-btn {
+  background: #0f3460;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option-btn:hover {
+  background: #00e0ff;
+  color: #0f0f0f;
+}
+
+/* ==== Next button ==== */
+#next-btn {
+  background: #00e0ff;
+  color: #0f0f0f;
+  border: none;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  display: none;
+}
+
+#next-btn:hover {
+  background: #00bcd4;
+  transform: translateY(-2px);
+}
+
+/* ==== Score screen ==== */
+#score-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#score {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.restart-btn {
+  background: #00e0ff;
+  color: #0f0f0f;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.restart-btn:hover {
+  background: #00bcd4;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 480px) {
+  .quiz-container {
+    padding: 1.5rem;
+  }
+  #question {
+    font-size: 1.1rem;
+  }
+  .option-btn {
+    font-size: 0.95rem;
+  }
+}

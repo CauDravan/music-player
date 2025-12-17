@@ -211,3 +211,9 @@ html,body{
   .albums{grid-template-columns:repeat(2,1fr)}
   .cover{border-radius:10px}
 }
+
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}

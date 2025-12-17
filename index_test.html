@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  
+  <!-- Basic Meta Tags -->
+  <meta name="title" content="Lab 4">
+  <meta name="description" content="Hi">
+  <meta name="keywords" content="fullstack developer">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="My Name">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="My Name Portfolio" />
+  <meta property="og:url" content="/" />
+  <meta property="og:image" content="/banner.avif" />
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:title" content="My Name Portfolio">
+  <meta name="twitter:description" content="Hi">
+  <meta name="twitter:image" content="/banner.avif">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <!-- Banner Section -->
+  <section class="min-h-screen w-full flex flex-col justify-center items-center bg-[url('/banner.avif')] bg-cover bg-center">
+    <div class="w-full lg:w-[80%] p-12 text-gray-800">
+      <h1 class="text-6xl font-bold mb-10 grid grid-col-1 lg:gap-5">
+        <span class="banner-text">Hi, my name is <span class="text-teal-400">Your Name</span></span>
+        <span class="text-gray-800 banner-text">I'm a Web Developer.</span>
+      </h1>
+      <a href="#about-me" class="banner-cta uppercase border-2 border-teal-400 p-3 hover:bg-teal-400 hover:text-white transition-colors cursor-pointer">
+        <span class="text-xl pl-8 pr-8 pt-3 pb-3 font-light focus:outline-none focus:ring focus:ring-teal-300">Know more</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about-me" class="bg-teal-400 min-h-screen w-full flex flex-col justify-center items-center p-4 lg:p-12 text-white">
+    <div class="w-full lg:w-[60%] mb-5">
+      <h2 class="section-title uppercase text-2xl lg:text-5xl text-center font-bold text-white mb-12">About Me</h2>
+      <div class="section-content grid grid-cols-1 gap-2 lg:grid-cols-3 lg:gap-3">
+        <div class="flex justify-center items-center text-center col-span-1">
+          <img class="object-cover max-w-xs lg:w-auto" src="https://via.placeholder.com/300" title="My avatar" alt="My avatar" />
+        </div>
+        <div class="col-span-1 lg:col-span-2 flex justify-center items-center">
+          <div class="p-0 text-center lg:p-8 lg:text-start">
+            <p class="pb-3 text-lg font-light mb-5">
+              I love cat
+            </p>
+            <a href="#" target="_blank" class="uppercase border-2 border-white p-3 text-white hover:bg-white hover:text-teal-400 transition-colors cursor-pointer">
+              <span class="text-xl pl-8 pr-8 pt-3 pb-3 font-normal focus:outline-none focus:ring focus:ring-teal-300">View My CV</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white min-h-[500px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
+    <div class="w-full lg:w-[60%] mb-5">
+      <h2 class="section-title uppercase text-2xl lg:text-5xl text-center font-bold mb-6">Contact</h2>
+      <p class="section-content flex flex-col justify-center items-center pt-5 pb-5 text-center">
+        <span class="text-2xl text-teal-500 mb-3">I LOVE CAT</span>
+        <br></br>
+        <span>I love cat</span>
+      </p>
+    </div>
+    <a href="mailto:your.email@gmail.com?subject=Hi, I want to connect with you for work&body=Please describe your work or projects requirements" 
+       class="border-2 border-teal-400 pl-8 pr-8 pt-3 pb-3 bg-teal-400 text-white hover:bg-white hover:text-teal-400 transition-colors cursor-pointer">
+      <span class="text-xl uppercase font-light focus:outline-none focus:ring focus:ring-teal-300">Send An Email Now</span>
+    </a>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-neutral-900 min-h-[300px] pt-12 pb-12 flex flex-row justify-center items-center">
+    <div class="w-[60%] flex flex-col justify-center items-center">
+      <ul class="flex flex-row">
+        <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2 transition-transform">
+          <a href="https://twitter.com/yourusername" target="_blank">
+            <img class="w-10 grayscale hover:grayscale-0" src="/imgs/twitter.svg" alt="Twitter" />
+          </a>
+        </li>
+        <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2 transition-transform">
+          <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+            <img class="w-10 grayscale hover:grayscale-0" src="/imgs/linkedin.svg" alt="LinkedIn" />
+          </a>
+        </li>
+        <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2 transition-transform">
+          <a href="https://github.com/yourusername" target="_blank">
+            <img class="w-10 grayscale hover:grayscale-0" src="/imgs/github.svg" alt="GitHub" />
+          </a>
+        </li>
+      </ul>
+      <hr class="w-1/2 border-gray-500 mt-10"/>
+      <p class="text-lg text-gray-500 mt-5">©2024 - Your Name</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/scripts/application.js"></script>
+</body>
+</html>
